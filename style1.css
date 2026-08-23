@@ -1,0 +1,482 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #10131a;
+    font-family: sans-serif;
+    color: #8d96a8;
+    line-height: 1.4;
+}
+
+
+/* ================= MAIN CONTAINER ================= */
+
+.main-container {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    padding-top: 30px;
+    margin: auto;
+}
+
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+    height: 120vh;
+    background-color: #171c26;
+    border: 1px solid #262e3d;
+    border-radius: 16px;
+    padding: 20px;
+    position: sticky;
+    top: 20px;
+}
+
+
+/* ================= MAIN CONTENT ================= */
+
+.main-content {
+    background-color: #171c26;
+    border: 1px solid #262e3d;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+
+/* ================= PROFILE ================= */
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid rgba(69, 217, 192, 0.35);
+}
+
+.profile h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #eef1f7;
+    margin-top: 5px;
+}
+
+.profile span {
+    font-size: 0.8rem;
+    background-color: rgba(69, 217, 192, 0.12);
+    border: 1px solid rgba(69, 217, 192, 0.35);
+    border-radius: 8px;
+    margin-top: 5px;
+    padding: 5px 15px;
+    color: #45d9c0;
+    display: inline-block;
+}
+
+
+/* ================= HORIZONTAL LINE ================= */
+
+hr {
+    border: 1px solid #262e3d;
+    margin: 10px;
+}
+
+
+/* ================= CONTACT ================= */
+
+.label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #8d96a8;
+    margin-top: 10px;
+}
+
+.value {
+    text-decoration: none;
+    color: #eef1f7;
+    font-size: 0.8rem;
+}
+
+.value:hover {
+    color: #45d9c0;
+}
+
+
+/* ================= SOCIAL ================= */
+
+.social {
+    text-align: center;
+}
+
+.social img {
+    width: 26px;
+    height: 26px;
+    filter: grayscale(1) invert(0.7);
+    transition: filter 0.3s ease;
+}
+
+#a1 {
+    margin-right: 10px;
+}
+
+.social img:hover {
+    filter: grayscale(0) invert(0);
+}
+
+
+/* ================= NAVIGATION ================= */
+
+#navigation {
+    border-bottom: 2px solid #262e3d;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8d96a8;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+}
+
+#active,
+nav a:hover {
+    color: #45d9c0;
+}
+
+
+/* ================= SECTION HEADINGS ================= */
+
+#mine,
+#khubi,
+#pdai,
+#made {
+    color: #eef1f7;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+
+/* ================= ACCENT HEADING LINE ================= */
+
+.line1 {
+    width: 60px;
+    height: 5px;
+    background-color: #45d9c0;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+
+/* ================= ABOUT ================= */
+
+#para {
+    text-align: justify;
+    color: #8d96a8;
+    margin-bottom: 15px;
+}
+
+
+/* ================= SKILLS ================= */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+}
+
+.item {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #262e3d;
+    background-color: #0d1017;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.item img {
+    height: 48px;
+    width: 48px;
+
+    filter:
+        invert(75%)
+        sepia(50%)
+        saturate(1000%)
+        hue-rotate(120deg)
+        brightness(105%)
+        contrast(101%);
+
+    margin-bottom: 14px;
+}
+
+.item h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #eef1f7;
+}
+
+#dabba {
+    margin-bottom: 40px;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 14px 2px rgba(69, 217, 192, 0.12);
+    border-color: rgba(69, 217, 192, 0.35);
+}
+
+
+/* ================= EDUCATION ================= */
+
+.edtech {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 25px;
+}
+
+
+/* Vertical timeline line */
+
+.edtech::before {
+    content: "";
+    position: absolute;
+
+    left: 7px;
+    top: 8px;
+    bottom: 8px;
+
+    width: 2px;
+    background-color: #262e3d;
+}
+
+
+/* ================= EDUCATION ITEMS ================= */
+
+.first,
+.second,
+.third {
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 0;
+}
+
+
+/* ================= EDUCATION DOT ================= */
+
+.goal {
+    position: absolute;
+
+    left: -25px;
+    top: 5px;
+
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+
+    border: 3px solid #45d9c0;
+
+    background-color: #171c26;
+
+    z-index: 2;
+}
+
+
+/* ================= LAST EDUCATION ITEM ================= */
+
+.third {
+    margin-bottom: 0;
+}
+
+
+/* ================= YEAR ================= */
+
+.year {
+    font-size: 0.75rem;
+    color: #45d9c0;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+
+/* ================= DEGREE ================= */
+
+.degree {
+    color: #eef1f7;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+/* ================= INSTITUTE NAME ================= */
+
+.name {
+    font-style: italic;
+    color: #8d96a8;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+
+/* ================= PROJECTS ================= */
+
+#projects {
+    margin-top: 30px;
+}
+
+
+/* ================= PROJECT CONTAINER ================= */
+
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+
+/* ================= PROJECT CARD ================= */
+
+.project1 {
+    background-color: #0d1017;
+    border: 2px solid #262e3d;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.project1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.4);
+    border-color: rgba(69, 217, 192, 0.35);
+}
+
+
+/* ================= PROJECT IMAGE ================= */
+
+.project1 img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ================= PROJECT CARD CONTENT ================= */
+
+.card {
+    padding: 15px;
+}
+
+.card h3 {
+    color: #eef1f7;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #8d96a8;
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+}
+
+
+/* ================= PROJECT TECHNOLOGY TAGS ================= */
+
+.card span {
+    display: inline-block;
+    background-color: rgba(69, 217, 192, 0.12);
+    color: #45d9c0;
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+
+/* ================================================= */
+/*                  RESPONSIVE DESIGN                */
+/* ================================================= */
+
+@media (max-width: 900px) {
+
+    .main-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .sidebar {
+        height: auto;
+    }
+
+    .main-content {
+        padding: 25px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .main-container {
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav a {
+        margin-left: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .item {
+        padding: 15px;
+    }
+
+    .item img {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /* Projects on mobile */
+
+    .project-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project1 img {
+        height: 180px;
+    }
+
+}
