@@ -71,10 +71,7 @@ Simply open `index.html` — no build step or dependencies required.
 
 ---
 
-## 🌐 Live Demo
-🔗 [https://shivangisahu-dev.github.io/Personal-Portfolio-Website/](https://shivangisahu-dev.github.io/Personal-Portfolio-Website/)
 
----
 
 ## 💡 Key Concepts Demonstrated
 
